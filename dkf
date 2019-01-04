@@ -1,0 +1,130 @@
+[33mcommit e29972e288a7afaf626c036b17b5c02b51b5513c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: dddsss3ddd <46103681+dddsss3ddd@users.noreply.github.com>
+Date:   Fri Jan 4 16:51:18 2019 +0900
+
+    clear git dir haha
+
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..77d9430[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,31 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m	[32m<title>test page</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<h1 style="color: green">Hello this is Git world</h1>[m
+[32m+[m[32m<table>[m
+[32m+[m[32m<tr>[m
+[32m+[m[32m<td>[m
+[32m+[m	[32m1[m
+[32m+[m[32m</td>[m
+[32m+[m[32m<td>[m
+[32m+[m	[32m2[m
+[32m+[m[32m</td>[m
+[32m+[m[32m<td>[m
+[32m+[m	[32m3[m
+[32m+[m[32m</td>[m
+[32m+[m[32m<td>[m
+[32m+[m	[32m4[m
+[32m+[m[32m</td>[m
+[32m+[m[32m<td>[m
+[32m+[m	[32m5[m
+[32m+[m[32m</td>[m
+[32m+[m[32m<td>[m
+[32m+[m	[32m6[m
+[32m+[m[32m</td>[m
+[32m+[m[32m</tr>[m
+[32m+[m[32m</table>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+
+[33mcommit 2c429cf9fc6fef49f65c74a26fce630c8f0d27fd[m
+Author: dddsss3ddd <46103681+dddsss3ddd@users.noreply.github.com>
+Date:   Fri Jan 4 15:51:04 2019 +0900
+
+    this is gogo
+
+[1mdiff --git a/cli-git b/cli-git[m
+[1mnew file mode 160000[m
+[1mindex 0000000..8e94d20[m
+[1m--- /dev/null[m
+[1m+++ b/cli-git[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mSubproject commit 8e94d20b1e2a64d5a8a9bc13f8cb4eb053ad453a[m
+[1mdiff --git a/jquery.plugin-shell.js b/jquery.plugin-shell.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b9d3496[m
+[1m--- /dev/null[m
+[1m+++ b/jquery.plugin-shell.js[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m(function(win, doc, $, undefined){[m
+[32m+[m	[32m'use strict';[m
+[32m+[m
+[32m+[m	[32m//jQuery 유틸리티 메소드 확장[m
+[32m+[m	[32m$.extend($,{[m
+[32m+[m	[32m 'version': function(){console.log($.fn.jquery);}[m
+[32m+[m	[32m});[m
+[32m+[m
+[32m+[m	[32m//jQuery.fn 인스턴스 메소드 확장[m
+[32m+[m	[32m$.extend($.fn,{[m
+[32m+[m		[32m'method': function(options){[m
+[32m+[m			[32mvar $origin = this;[m
+[32m+[m			[32mreturn $.each($origin, function(index, el){[m
+[32m+[m
+[32m+[m			[32m};[m
+[32m+[m		[32m}[m
+[32m+[m	[32m});[m
+[32m+[m[32m})(window, document, jQuery);[m
+\ No newline at end of file[m
+
+[33mcommit 4d7cbea4e3a4e311baea122d2afce9fc2545fa8a[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: dddsss3ddd <46103681+dddsss3ddd@users.noreply.github.com>
+Date:   Wed Jan 2 12:44:26 2019 +0900
+
+    readme fix
+
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 19765ea..1a28139 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1 +1,18 @@[m
+[31m-# node_practice[m
+\ No newline at end of file[m
+[32m+[m[32m# node_practice[m
+[32m+[m[32mHello this is dddsss3ddd who create this repository.[m
+[32m+[m
+[32m+[m[32mThe reason of this project is just study git and github.[m
+[32m+[m
+[32m+[m[32mthank you.[m
+[32m+[m
+[32m+[m[32m====순서[m
+[32m+[m[32m1. Git 설치[m
+[32m+[m[32m2. GitHub for Windows 애플리케이션 설치[m
+[32m+[m[32m3. GitHub 가입 ㅁ 치 애플리케이션에 연결[m
+[32m+[m[32m4. GitHun 저장소(Repository) 생성[m
+[32m+[m[32m5. 프로젝트 샘플 파일 추가(add) & 커밋(commit)[m
+[32m+[m[32m6. GitHub 저장소에 퍼블리싱(Publishing: push)[m
+[32m+[m[32m7. 등록한 이메일 주소 검증[m
+[32m+[m[32m8. READ.md 파일 생성[m
+[32m+[m[32m9. 로컬 컴퓨터 Git 폴더의 READ.md 파일 수정[m
+[32m+[m[32m10. GitHub for Windows 애플리케이션을 통해 커밋(Commit) 하고 Push[m
+
+[33mcommit 2e920a6cbbfa51f63a6009ddf603df8c9642f2ca[m
+Author: dddsss3ddd <46103681+dddsss3ddd@users.noreply.github.com>
+Date:   Wed Jan 2 12:24:19 2019 +0900
+
+    Initial commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..19765ea[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m# node_practice[m
+\ No newline at end of file[m
